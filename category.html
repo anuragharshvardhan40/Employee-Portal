@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--bootstrap and css files-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/release/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <title>UiBrains Dashboard</title>
+</head>
+<body>
+<!--main navbar-->
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+        <a href="index.html" class="navbar-brand text-warning">
+            <i class="fa fa-snowflake"></i> Ui Brains
+        </a>
+        <button class ="navbar-toggler"data-toggle="collapse" data-target="#ui-navbar">
+            <span class ="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class = "collapse navbar-collapse" id ="ui-navbar">
+            <ul class ="navbar-nav">
+                <li class ="nav-item">
+                    <a class = "nav-link"href="index.html">
+                        <i class="fa fa-chart-bar text-muted"></i>Dashboard</a>
+                </li>
+                <li class ="nav-item">
+                    <a class = "nav-link"href="task.html">
+                        <i class="fa fa-list text-muted"></i>Task</a>
+                </li>
+                <li class ="nav-item">
+                    <a class = "nav-link"href="category.html">
+                        <i class="fa fa-sitemap text-muted"></i>category</a>
+                </li>
+                <li class ="nav-item">
+                    <a class = "nav-link"href="employee.html">
+                        <i class="fa fa-users text-muted"></i>Employee</a>
+                </li>
+            </ul>
+            <ul class ="navbar-nav ml-auto">
+                <li class ="nav-item dropdown">
+                    <a class = "nav-link"href="#" data-toggle="dropdown">
+                        <i class="fa fa-sign-in-alt text-muted"></i>Mohan Priya Technology</a>
+                    <div class="dropdown-menu" p-2>
+                        <a href="profile.html" class="dropdown-item">
+                            <i class="fa fa-user-circle"></i>Profile</a>
+                        <a href="setting.html" class="dropdown-item">
+                            <i class="fa fa-cogs"></i>Setting</a>
+
+
+                    </div>
+                </li>
+                <li class ="nav-item">
+                    <a class = "nav-link"href="login.html">
+                        <i class="fa fa-sign-out-alt text-muted"></i>Logout</a>
+                </li>
+
+            </ul>
+
+
+        </div>
+    </div>
+</nav>
+
+<!--categories section-->
+<section class="p-2 bg-success text-white">
+    <div class="container">
+        <div class="row animated rotateInUpLeft">
+            <h1>
+                <i class="fa fa-site-map"></i>Categories
+            </h1>
+
+        </div>
+    </div>
+</section>
+
+<!--category search -->
+<section class = "p-3">
+    <div class="container">
+        <div class="row animated zoomIn delay-1s">
+            <div class="col-md-6">
+                <!--empty-->
+
+            </div>
+            <div class="col-md-6 ">
+                <form class ="form-inline">
+                    <div class = "form-group">
+                        <input size="30" type="search" class="form-control" placeholder="category Name">
+                    </div>
+                    <div>
+                        <input type="submit" value="search" class="btn btn-success">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--category table-->
+        <section class="p-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card animated rotateInUpRight delay-2s">
+                            <div class="card-header bg-success text-white">
+                                <h3>categories Details</h3>
+                            </div>
+                            <div class="card-body bg-light-green">
+                                <table class="table table-hover text-center">
+                                    <thead class="bg-dark text-white">
+                                    <tr>
+                                        <th>SNO</th>
+                                        <th>NAME</th>
+                                        <th>EMAIL</th>
+                                        <th>TASK</th>
+                                        <th>LEVEL</th>
+                                        <th>CATEGORY</th>
+                                        <th>DETAILS</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Suraj</td>
+                                        <td>suraj77@gmail.com</td>
+                                        <td>Automation</td>
+                                        <td>Medium</td>
+                                        <td>Developnment</td>
+                                        <td>
+                                            <a href="#" class="btn btn-outline-dark btn-sm">Details</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Jay</td>
+                                        <td>jay77@gmail.com</td>
+                                        <td>Python</td>
+                                        <td>Medium</td>
+                                        <td>Developnment</td>
+                                        <td>
+                                            <a href="#" class="btn btn-outline-dark btn-sm">Details</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Suresh</td>
+                                        <td>Suresh77@gmail.com</td>
+                                        <td>Android</td>
+                                        <td>Medium</td>
+                                        <td>Developnment</td>
+                                        <td>
+                                            <a href="#" class="btn btn-outline-dark btn-sm">Details</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Rimjhim</td>
+                                        <td>rimjhim77@gmail.com</td>
+                                        <td>Java</td>
+                                        <td>Medium</td>
+                                        <td>Developnment</td>
+                                        <td>
+                                            <a href="#" class="btn btn-outline-dark btn-sm">Details</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Nikita</td>
+                                        <td>Nikita77@gmail.com</td>
+                                        <td>NodeJs</td>
+                                        <td>Medium</td>
+                                        <td>Developnment</td>
+                                        <td>
+                                            <a href="#" class="btn btn-outline-dark btn-sm">Details</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Gargi</td>
+                                        <td>Gargi77@gmail.com</td>
+                                        <td>React</td>
+                                        <td>Medium</td>
+                                        <td>Developnment</td>
+                                        <td>
+                                            <a href="#" class="btn btn-outline-dark btn-sm">Details</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Ishita</td>
+                                        <td>Iahita77@gmail.com</td>
+                                        <td>Angular</td>
+                                        <td>Medium</td>
+                                        <td>Developnment</td>
+                                        <td>
+                                            <a href="#" class="btn btn-outline-dark btn-sm">Details</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Priyesh</td>
+                                        <td>Priyesh77@gmail.com</td>
+                                        <td>Mysql</td>
+                                        <td>Easy</td>
+                                        <td>Database</td>
+                                        <td>
+                                            <a href="#" class="btn btn-outline-dark btn-sm">Details</a>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+    </div>
+</section>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!--main footer-->
+<footer class = "p-3 bg-dark text-white text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Copyright & copy 2020,UiBrains.com</h3>
+                <h6>All Right Reserved</h6>
+                <h6>Developed and maintained by
+                    <a class ="text-warning" href="https://www.youtube.com/watch?v=H9tWRGxuKTw" target ="_blank">Mohan Priya Technologies</a></h6>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!--bootstrap js files-->
+
+<script src = "bootstrap/js/jquery.js"></script>
+<script src = "bootstrap/js/popper.js"></script>
+<script src = "bootstrap/js/bootstrap.js"></script>
+<script src = "bootstrap/js/mdb.js"></script>
+<script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
+<script>
+    CKEDITOR.replace( 'editor1' );
+    </scrip
+
+    </body>
+    </html>
